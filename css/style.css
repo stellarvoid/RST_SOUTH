@@ -1,14 +1,16 @@
 body{
-	background: grey;
+	background: white;
 	font-family: 'Century Gothic';
 }
-
+/** ======================HEADER============================ */
 .header{
 	position: fixed;
+	align-items: center;
+	justify-content: center;
 	top: 0;
 	left: 0;
 	z-index: 50;
-	
+	box-shadow: 0px 9px 22px 0px #00000031;
 	width: 100%;
 	height: 150px;
 	background: #fff;
@@ -16,15 +18,15 @@ body{
 .wrapper {
 
 }
-.container{
+.container-header{
 	padding: 0px 10px 0px 10px;
 	display: flex;
+	height: 100%;
 	font-display: row;
 	align-items: center;
 	justify-content: space-between;
 	margin: 0 auto;
-	/* margin-top: 20px; */
-	max-width: 1204px;
+	max-width: 1300px;
 }
 .block-logo {
 	display: flex;
@@ -57,7 +59,7 @@ body{
 .menu-link{
 	font-size: 15px;
 	text-decoration: none;
-	margin: 0px 13px 0px 13px;
+	margin: 0px 10px 0px 10px;
 	padding: 10px 0px 10px 0px;
 	color: #595959;
 	transition: all .2s;
@@ -67,8 +69,152 @@ body{
 }
 .contacts {
 }
-.contacts-item {
+.contacts-item{
+	display: flex;
+	font-display: row;
 }
+.contacts-item:first-child{
+	margin-bottom: 16px;
+}
+.icon{
+	padding-top: 5px;
+	margin-right: 5px;
+}
+.contacts-text p:first-child{
+	margin-bottom: 3px;
+}
+.burger{
+	display: none;
+}
+.burger-close{
+	display: none;
+}
+/*? ====================Второе меню========================= */
+
+@media screen and (max-width:770px) {
+	.nav{
+		display: none;
+	}
+	.menu-link{
+		width: 80%;
+	}
+	.header{
+		height: 100px;
+	}
+	.contacts{
+		display: none;
+	}
+	.burger{
+		display: block;
+		width: 26px;
+		height: 20px;
+		position: fixed;
+		z-index: 55;
+		right: 20px;
+		top: 42px;
+	}
+	.burger::before,
+	.burger:after{
+		content: '';
+		position: absolute;
+		background-color: #000;
+		height: 2px;
+		width: 100%;
+		left: 0;
+		z-index: 56;
+		transition: all .3s ease 0s;
+	}
+	.burger::before{
+		top: 0;
+	}
+	.burger:after{
+		bottom: 0;
+	}
+	.burger span{
+		position: absolute;
+		height: 2px;
+		top: 9px;
+		width: 100%;
+		background: #000;
+	}
+	.active-burger{
+		
+	}
+	.burger.active-burger::before{
+		transform: rotate(45deg);
+		top:9px;
+	}
+	.burger.active-burger::after{
+		transform: rotate(-45deg);
+		bottom: 9px;
+	}
+	.burger.active-burger span{
+		display: none;
+	}
+
+
+	.nav-r .responsive-link{
+		margin-bottom: 10px;
+	}
+}
+.blure{
+	background: hsla(0, 0%, 0%, 0.5);
+	transition: all .4s ease-in-out;
+}
+/*?=============================*/
+
+.nav-r{
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	margin-bottom: 40px;
+}
+.responsive-menu{
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	padding: 20px;
+	background: #fff;
+	max-width: 335px;
+	position: fixed;
+	z-index: 51;
+	top: 0;
+	right: -335px;
+	bottom: 0;
+	transition: all .3s;
+	box-shadow: 0px 9px 22px 0px #00000031;
+
+}
+.active{
+	right: 0;
+}
+
+
+
+
+
+
+/** ======================MAIN============================ */
+/*TODO Сделать отступ под картинку для мейна */
+
 main{
-	padding-top: 160px;
+	padding-top: 160px; 
+}
+
+
+
+
+/** ======================MEDIA queries====================*/
+
+@media screen and (max-width:376px){
+
+
+	/** =====header======*/
+
+	.logo-text-1{
+		font-size: 16px;
+	}
+	.logo-text-2{
+		font-size: 10px;
+	}
 }

@@ -200,6 +200,30 @@ body{
 main{
 	padding-top: 160px; 
 }
+.container {
+	max-width: 1300px;
+	margin: 0 auto;
+}
+.title-services{
+	margin-top: 80px;
+	margin-bottom: 80px;
+	font-weight: 600;
+	font-size: 40px;
+	line-height: 41,44px;
+	color: #1F2437;
+}
+.services {
+	/* overflow: auto; */
+	width: 100%;
+	display: flex;
+	justify-content: space-between;
+}
+.services-item{
+	width: 363px;
+}
+
+
+
 
 
 

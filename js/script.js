@@ -6,3 +6,4 @@ $(document).ready(function () {
 		$('.title-block-img-1').toggleClass('none');
 	});
 });
+

@@ -33,8 +33,7 @@ body{
 .logo {
 	margin-right: 10px;
 }
-.logo-text {
-}
+
 .logo-text-1{
 	color: #1F2437;
 	text-transform: uppercase;
@@ -64,8 +63,7 @@ body{
 .menu-link:hover{
 	border-bottom: 2px solid #292727;
 }
-.contacts {
-}
+
 .contacts-item{
 	display: flex;
 	font-display: row;

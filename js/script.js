@@ -1,3 +1,5 @@
+
+//!BURGER MENU
 $(document).ready(function () {
 	$('.burger').click(function (event) {
 		$('.responsive-menu').toggleClass('active');
@@ -12,14 +14,29 @@ $(document).ready(function () {
 		$('.arrow-more').toggleClass('arrow-active')
 	});
 });
-$('.nav,.nav-r a').on('click', function () {
+
+//!SCROLL
+$('.nav a').on('click', function () {
 
 	let href = $(this).attr('href');
 
 	$('html, body').animate({
 		scrollTop: $(href).offset().top
 	}, {
-		duration: 570,   // по умолчанию «400» 
+		duration: 370,   // по умолчанию «400» 
+		easing: "linear" // по умолчанию «swing» 
+	});
+
+	return false;
+});
+$('.nav-r a').on('click', function () {
+
+	let href = $(this).attr('href');
+
+	$('html, body').animate({
+		scrollTop: $(href).offset().top
+	}, {
+		duration: 370,   // по умолчанию «400» 
 		easing: "linear" // по умолчанию «swing» 
 	});
 

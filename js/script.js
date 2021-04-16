@@ -1,6 +1,7 @@
 
 //!BURGER MENU
 $(document).ready(function () {
+
 	$('.burger').click(function (event) {
 		$('.responsive-menu').toggleClass('active');
 		$('.burger').toggleClass('active-burger');
@@ -14,6 +15,7 @@ $(document).ready(function () {
 		$('.arrow-more').toggleClass('arrow-active')
 	});
 });
+
 
 //!SCROLL
 $('.nav a').on('click', function () {
@@ -88,7 +90,7 @@ for (let elm of elements) {
 
 
 
-//!SLIDERSSSSSS
+//!SLIDERSSSSSSS
 const swiperDocs = new Swiper('.docs-slider', {
 	navigation: {
 		nextEl: '.docs-next',

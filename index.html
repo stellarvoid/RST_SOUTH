@@ -7,8 +7,8 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
 	<link rel="stylesheet" href="css/reset.css">
 	<link href="fonts/Gothic/stylesheet.css" rel="stylesheet" type="text/css" />
-	<link rel="stylesheet" href="css/style.css">
 	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />client
+	<link rel="stylesheet" href="css/style.css">
 	<title>Document</title>
 </head>
 
@@ -16,7 +16,7 @@
 
 	<!--!=============================HEADER==============================-->
 
-	<header class="header">
+	<header id="header" class="header">
 		<div class="wall"></div>
 		<div class="container-header">
 			<div class="block-logo">
@@ -136,8 +136,12 @@
 
 	<main>
 
-		<!--? ========================title-block=======================-->
 
+
+
+
+
+		<!--? ========================title-block=======================-->
 		<div class="container">
 			<div class="title-block">
 				<div class="title-block-text">
@@ -147,7 +151,8 @@
 						<p class="li">законно</p>
 						<p class="li">по лучшей цене</p>
 					</div>
-					<input class="title-btn" type="button" value="Заказать">
+					<a class="title-btn" href="#popup">Заказать</a>
+
 				</div>
 				<div class="title-block-img element-animation">
 					<img class="title-block-img-1" src="img/utsets.jpg" alt="book">
@@ -319,73 +324,73 @@
 				<div class="services-item element-animation">
 					<div class="services-img-1"></div>
 					<p>Декларация соответствия ТР ТС и ГОСТ Р </p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item element-animation">
 					<div class="services-img-1"></div>
 					<p>Добровольный сертификат </p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item element-animation">
 					<div class="services-img-3"></div>
 					<p>Отказное письмо </p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item element-animation">
 					<div class="services-img-4"></div>
 					<p>Сертификат соответствия</p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item">
 					<div class="services-img-1"></div>
 					<p>Сертификат соответствия</p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item">
 					<div class="services-img-1"></div>
 					<p>Сертификат соответствия</p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item">
 					<div class="services-img-1"></div>
 					<p>Сертификат соответствия</p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item">
 					<div class="services-img-1"></div>
 					<p>Сертификат соответствия</p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item">
 					<div class="services-img-1"></div>
 					<p>Сертификат соответствия</p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item">
 					<div class="services-img-1"></div>
 					<p>Сертификат соответствия</p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item">
 					<div class="services-img-1"></div>
 					<p>Сертификат соответствия</p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 				<div class="services-item">
 					<div class="services-img-1"></div>
 					<p>Сертификат соответствия</p>
-					<input type="button" value="Заказать">
+					<a href="#popup" class="services-btn">Заказать</a>
 				</div>
 
 			</div>
@@ -407,7 +412,7 @@
 				<h2 class="title-responsive">Не можете найти то, что Вам нужно? Мы поможем!</h2>
 				<p>Мы поможем. Пришлём на почту полный перечень услуг и перезвоним вам для пояснений.</p>
 
-				<input type="button" value="Пришлите прайс и перезвоните">
+				<a class="qes-btn" href="#popup">Пришлите прайс и перезвоните</a>
 
 			</div>
 		</div>
@@ -691,7 +696,7 @@
 				<h2 class="qes2-title second">Остались вопросы? Оставьте заявку и мы Вам перезвоним!</h2>
 				<p class="first">Вы услышите приятный голос и благие намерения.</p>
 				<p class="second">Мы поможем. Пришлём на почту полный перечень услуг и перезвоним вам для пояснений.</p>
-				<input type="button" value="Перезвоните мне">
+				<a class="qes2-btn" href="#popup">Перезвоните мне </a>
 			</div>
 		</div>
 
@@ -1259,9 +1264,32 @@
 		</div>
 
 		<!--?============================FORM-MAP====================================-->
-
+		<div class="container second">
+			<form class="form-map-1">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="RST-UG">
+				<input type="hidden" name="admin_email" value="danya.danya.lool@gmail.com">
+				<input type="hidden" name="form_subject" value="РСТ-ЮГ - Заявка с сайта">
+				<!-- END Hidden Required Fields -->
+				<h2>Закажите звонок</h2>
+				<p>Наш менедженер ответи вам через 15 минут</p>
+				<input type="text" name="Name" placeholder="Имя или организация" required><br>
+				<input type="email" name="E-mail" placeholder="Почта" required><br>
+				<input class="mb" type="tel" name="Phone" placeholder="Номер телефона" required><br>
+				<div class="block-textarea">
+					<label for="text-zone">Задать вопрос</label>
+					<textarea id="text-zone" name="text-zone" placeholder="Здесь вы можете рассказать нам, что вам нужно"
+						name="text"></textarea><br>
+				</div>
+				<button>Отправить</button>
+				<div class="block-checkbox-1">
+					<input type="checkbox" class="pp-1" name="pp" id="pp-1" required>
+					<label for="pp-1">Я согласен на обработку <a href="#">персональных данных</a></label>
+				</div>
+			</form>
+		</div>
 		<div class="wrapper map">
-			<img src="img/blure.png" alt="">
+			<img src="img/blure.png" alt="123">
 			<div class="location">
 				<p>г. Ростов-на-Дону ул. Троллейбусная, д. 24/2в, офис 29</p>
 				<p><span>время работы:</span> с 9:00 до 18:00</p>
@@ -1269,8 +1297,63 @@
 				<p><span>ИНН:</span> 6166106404</p>
 			</div>
 
-			<form action=""></form>
+			<form class="form-map">
+				<!-- Hidden Required Fields -->
+				<input type="hidden" name="project_name" value="RST-UG">
+				<input type="hidden" name="admin_email" value="danya.danya.lool@gmail.com">
+				<input type="hidden" name="form_subject" value="РСТ-ЮГ - Заявка с сайта">
+				<!-- END Hidden Required Fields -->
+				<h2>Закажите звонок</h2>
+				<p>Наш менедженер ответи вам через 15 минут</p>
+				<input type="text" name="Name" placeholder="Имя или организация" required><br>
+				<input type="email" name="E-mail" placeholder="Почта" required><br>
+				<input class="mb" type="tel" name="Phone" placeholder="Номер телефона" required><br>
+				<div class="block-textarea">
+					<label for="text-zone">Задать вопрос</label>
+					<textarea id="text-zone" name="text-zone" placeholder="Здесь вы можете рассказать нам, что вам нужно"
+						name="text"></textarea><br>
+				</div>
+				<button>Отправить</button>
+				<div class="block-checkbox">
+					<input type="checkbox" class="pp" name="pp" id="pp" required>
+					<label for="pp">Я согласен на обработку <a href="#">персональных данных</a></label>
+				</div>
+			</form>
 		</div>
+
+
+		<!--!==========================POPUP====================================-->
+		<div id="popup" class="popup">
+			<a href="#header" class="popup-area"></a>
+			<div class="popup-body">
+				<div class="popup-content">
+					<a href="#header" class="popup-close">X</a>
+					<form class="form-map-popup">
+
+						<input type="hidden" name="project_name" value="RST-UG">
+						<input type="hidden" name="admin_email" value="danya.danya.lool@gmail.com">
+						<input type="hidden" name="form_subject" value="РСТ-ЮГ - Заявка с сайта">
+
+						<h2>Закажите звонок</h2>
+						<p>Наш менедженер ответи вам через 15 минут</p>
+						<input type="text" name="Name" placeholder="Имя или организация" required><br>
+						<input type="email" name="E-mail" placeholder="Почта" required><br>
+						<input class="mb" type="tel" name="Phone" placeholder="Номер телефона" required><br>
+						<div class="block-textarea-popup">
+							<label for="text-zone-popup">Задать вопрос</label>
+							<textarea id="text-zone-popup" name="text-zone"
+								placeholder="Здесь вы можете рассказать нам, что вам нужно" name="text"></textarea><br>
+						</div>
+						<button>Отправить</button>
+						<div class="block-checkbox-popup">
+							<input type="checkbox" class="pp" name="pp" id="pp-popup" required>
+							<label for="pp-popup">Я согласен на обработку <a href="#">персональных данных</a></label>
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+
 
 	</main>
 
@@ -1366,6 +1449,7 @@
 		</div>
 
 	</footer>
+
 
 	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 	<script src="https://code.jquery.com/jquery-2.2.4.min.js"

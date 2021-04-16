@@ -44,6 +44,7 @@ $('.nav-r a').on('click', function () {
 });
 
 
+
 //! TITLE-BLOCK toggle text
 function nextMsg(i) {
 	if (messages.length == i) {
@@ -63,60 +64,9 @@ $('#message').hide();
 
 nextMsg(0);
 
-// $(function () {
-
-// 	$("#typing").typed({
-// 		strings: [" В Африке гориллы.", " В Африке большие.", " Злые крокодилы."],
-// 		typeSpeed: 70,
-// 		backDelay: 1500,
-// 		startDelay: 2500,
-// 		loop: true,
-// 		loopCount: 2,
-// 		contentType: 'html',
-// 	});
-
-// });
-//todo https://myrusakov.ru/jquery-typed.html
 
 
 //!SROLLING ANIMATION
-// const animItems = document.querySelectorAll('._anim-items');
-
-// if (animItems.length > 0) {
-// 	window.addEventListener('scroll', animOnScroll);
-// 	function animOnScroll() {
-// 		for (let index = 0; index < animItems.length; index++) {
-// 			const animItem = animItem[index];
-// 			const animItemHeight = animItem.offsetHeight;
-// 			const animItemOffset = offset(animItem).top;
-// 			const animStart = 4;
-
-// 			let animItemPoint = window.innerHeight - animItemHeight / animStart;
-// 			if (animItemHeight > window.innerHeight) {
-// 				animItemPoint = window.innerHeight - window.innerHeight / animStart;
-// 			}
-
-// 			if ((pageYOffset > animItemOffset - animItemPoint) && pageYOffset < (animItemOffset + animItemHeight)) {
-// 				animItem.classList.add('._active');
-// 			} else {
-// 				animItem.classList.remove('._active');
-// 			}
-// 		}
-// 	}
-// 	function offset(el) {
-// 		const rect = el.getBoundingClientRect(),
-// 			scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
-// 			scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-// 		return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
-// 	}
-
-// 	// setTimeout(() => {
-// 	// 	animOnScroll();
-// 	// }, 300);
-
-// }
-
-
 function onEntry(entry) {
 	entry.forEach(change => {
 		if (change.isIntersecting) {
@@ -134,3 +84,93 @@ let elements = document.querySelectorAll('.element-animation');
 for (let elm of elements) {
 	observer.observe(elm);
 }
+
+
+
+
+//!SLIDERSSSSSS
+const swiperDocs = new Swiper('.docs-slider', {
+	navigation: {
+		nextEl: '.docs-next',
+		prevEl: '.docs-prev',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	slidesPerView: 5,
+
+});
+
+const swiperDocs2 = new Swiper('.docs-slider-1', {
+	navigation: {
+		nextEl: '.docs-next-1',
+		prevEl: '.docs-prev-1',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	slidesPerView: 2,
+
+});
+const swiperDocs3 = new Swiper('.letter-slider', {
+	navigation: {
+		nextEl: '.letter-next',
+		prevEl: '.letter-prev',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	slidesPerView: 4,
+
+});
+const swiperDocs4 = new Swiper('.letter-slider-1', {
+	navigation: {
+		nextEl: '.letter-next-1',
+		prevEl: '.letter-prev-1',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	slidesPerView: 1,
+
+});
+const swiperDocs5 = new Swiper('.reviews-slider', {
+	navigation: {
+		nextEl: '.reviews-next',
+		prevEl: '.reviews-prev',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	slidesPerView: 2,
+
+});
+const swiperDocs6 = new Swiper('.reviews-slider-1', {
+	navigation: {
+		nextEl: '.reviews-next-1',
+		prevEl: '.reviews-prev-1',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	slidesPerView: 1,
+
+});
+const swiperDocs7 = new Swiper('.team-slider', {
+	navigation: {
+		nextEl: '.team-next',
+		prevEl: '.team-prev',
+	},
+	pagination: {
+		el: '.swiper-pagination',
+		clickable: true,
+	},
+	slidesPerView: 1,
+
+});
